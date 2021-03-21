@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_currency_details"
+    app:startDestination="@id/currencyDetailsFragment">
+
+    <fragment
+        android:id="@+id/currencyDetailsFragment"
+        android:name="hr.perisic.luka.currency.ui.details.CurrencyDetailsFragment"
+        android:label="CurrencyDetailsFragment"
+        tools:layout="@layout/fragment_currency_details">
+
+        <argument
+            android:name="currency"
+            app:argType="hr.perisic.luka.data.remote.model.Currency" />
+
+    </fragment>
+
+</navigation>

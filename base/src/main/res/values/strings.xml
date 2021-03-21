@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Crypto Scanner</string>
+    <string name="value_format">Value: %s</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="one_day">24h</string>
+    <string name="two_days">2d</string>
+    <string name="one_month">1m</string>
+    <string name="one_year">1y</string>
+    <string name="market_cap">Market cap</string>
+    <string name="market_cap_rank">Market cap rank</string>
+    <string name="market_cap_rank_format">#%s</string>
+    <string name="all_time_high">All-time high</string>
+    <string name="all_time_high_date">All-time high date</string>
+    <string name="available_supply">Available supply</string>
+    <string name="total_supply">Total supply</string>
+    <string name="retry">Retry</string>
+    <string name="price_format">$%s</string>
+    <string name="price_change_format">%.2f</string>
+    <string name="percent_change_format">%.2f</string>
+    <string name="name_symbol_format">%s (%s)</string>
+</resources>

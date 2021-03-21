@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/currencyListFragment">
+
+    <fragment
+        android:id="@+id/currencyListFragment"
+        android:name="hr.perisic.luka.currency.ui.list.CurrencyListFragment"
+        android:label="CurrencyListFragment"
+        tools:layout="@layout/fragment_currency_list" />
+
+    <fragment
+        android:id="@+id/currencySearchFragment"
+        android:name="hr.perisic.luka.currency.ui.search.CurrencySearchFragment"
+        android:label="CurrencyListFragment"
+        tools:layout="@layout/fragment_currency_list" />
+
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="hr.perisic.luka.currency.ui.favorite.FavoriteListFragment"
+        android:label="CurrencyListFragment"
+        tools:layout="@layout/fragment_currency_list" />
+
+    <activity
+        android:id="@+id/currencyDetailsActivity"
+        android:name="hr.perisic.luka.currency.ui.details.CurrencyDetailsActivity"
+        android:label=" "
+        tools:layout="@layout/fragment_currency_details">
+
+        <argument
+            android:name="currency"
+            app:argType="hr.perisic.luka.data.remote.model.Currency" />
+
+    </activity>
+
+    <action
+        android:id="@+id/actionGlobalToCurrencyDetails"
+        app:destination="@id/currencyDetailsActivity" />
+
+</navigation>
